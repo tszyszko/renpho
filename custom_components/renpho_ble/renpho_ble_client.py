@@ -8,7 +8,7 @@ import struct
 from datetime import datetime
 from typing import Any, Callable, Optional
 
-from bleak import BleakClient, BleakGATTCharacteristic, BleakGATTService
+from bleak import BleakClient, BleakGATTCharacteristic
 from bleak.backends.device import BLEDevice
 from bleak.exc import BleakError
 
