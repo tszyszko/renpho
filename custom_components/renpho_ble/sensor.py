@@ -66,6 +66,43 @@ SENSOR_DESCRIPTIONS = {
         state_class=SensorStateClass.MEASUREMENT,
         entity_registry_enabled_default=False,
     ),
+    # Body composition sensors
+    ("metabolic_age", "years"): SensorEntityDescription(
+        key="metabolic_age_years",
+        name="Metabolic Age",
+        native_unit_of_measurement="years",
+        state_class=SensorStateClass.MEASUREMENT,
+    ),
+    ("protein", Units.PERCENTAGE): SensorEntityDescription(
+        key="protein_percentage",
+        name="Protein",
+        native_unit_of_measurement=PERCENTAGE,
+        state_class=SensorStateClass.MEASUREMENT,
+    ),
+    ("subcutaneous_fat", Units.PERCENTAGE): SensorEntityDescription(
+        key="subcutaneous_fat_percentage",
+        name="Subcutaneous Fat",
+        native_unit_of_measurement=PERCENTAGE,
+        state_class=SensorStateClass.MEASUREMENT,
+    ),
+    ("visceral_fat_grade", "grade"): SensorEntityDescription(
+        key="visceral_fat_grade",
+        name="Visceral Fat Grade",
+        native_unit_of_measurement="grade",
+        state_class=SensorStateClass.MEASUREMENT,
+    ),
+    ("lean_body_mass", Units.MASS_KILOGRAMS): SensorEntityDescription(
+        key="lean_body_mass_kg",
+        name="Lean Body Mass",
+        native_unit_of_measurement=UnitOfMass.KILOGRAMS,
+        state_class=SensorStateClass.MEASUREMENT,
+    ),
+    ("body_water", Units.PERCENTAGE): SensorEntityDescription(
+        key="body_water_percentage",
+        name="Body Water",
+        native_unit_of_measurement=PERCENTAGE,
+        state_class=SensorStateClass.MEASUREMENT,
+    ),
 }
 
 
